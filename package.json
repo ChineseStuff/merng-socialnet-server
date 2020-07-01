@@ -4,6 +4,7 @@
   "description": "A graphql server",
   "main": "index.js",
   "scripts": {
+    "serve": "node src/index",
     "start": "nodemon src/index"
   },
   "author": "ChineseStuff",
