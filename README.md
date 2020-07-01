@@ -6,14 +6,14 @@ Provides access to a Mongo Database through GraphQL
 
 - clone repo or download source
 - `npm install` on project root directory
-- modify `config.js` file in `/src` directory
-  with your own credentials for DB and choose a SECRET_KEY to manage authorization tokens
+- create a file to store DB credentials called `config.js` into `/src` directory.
+  In the following way, with your own credentials for DB and choose a SECRET_KEY to manage authorization tokens
   ```
   module.exports = {
     MONGODB:
-      'mongodb+srv://rootMDB:<password>@<cluster-url/<dbname>?retryWrites=true&w=majority',
+      'mongodb+srv://rootMDB:<password>@<cluster-url>/<dbname>?retryWrites=true&w=majority',
     SECRET_KEY:
-      '&lt;a secret key that you want&gt;',
+      '<a-secret-key-that-you-want>;',
   };`
   ```
 - `npm start`
